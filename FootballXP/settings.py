@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'api'
 ]
 
 MIDDLEWARE = [
@@ -76,12 +78,9 @@ WSGI_APPLICATION = 'FootballXP.wsgi.application'
 DATABASES = {
     'default': {
         'NAME': 'FootballXP',
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'USER': 'root',
-        'PASSWORD': 'MyNewPass',
-        'OPTIONS': {
-          'autocommit': True,
-        },
+        'PASSWORD': 'MyNewPass'
     }
 }
 
